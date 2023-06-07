@@ -26,3 +26,20 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+div.box1 {
+  margin: 15px;
+  padding: 0px 4px 5px 4px;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #474143;
+}
+.titles{
+	font-family: 'OpenSans-Light';
+	background: #003F7F;
+	color: white;
+	text-align: center;
+	
+}
