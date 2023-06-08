@@ -1,10 +1,11 @@
 ul {
+	font-family: 'OpenSans-Light';
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
 }
@@ -41,5 +42,15 @@ div.box1 {
 	background: #003F7F;
 	color: white;
 	text-align: center;
+	padding: 20px;
 	
+}
+
+footer {
+	font-family: 'OpenSans-Light';
+	outline: black;
+	background-color:#003F7F;
+	padding: 50px;
+	text-align:center;
+	color: white;
 }
