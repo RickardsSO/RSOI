@@ -37,6 +37,12 @@ div.box1 {
   text-align: center;
   background-color: #474143;
 }
+.logo{
+	 width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
 .titles{
 	font-family: 'OpenSans-Light';
 	background: #003F7F;
