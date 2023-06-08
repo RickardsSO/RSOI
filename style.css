@@ -38,13 +38,23 @@ div.box1 {
   background-color: #474143;
 }
 .logo{
-  width: 200px;
-  height: 200px;
+max-width: 50px;
+  max-height: 50px;
   top: 0;
   left: 0;
+
+}
+.logo_title{
+
+	color: white;
+	
+}
+.logocontainer{
+	
+	background-color: #003F7F;
 }
 .titles{
-	font-family: 'OpenSans-Light';
+	font-family: sans-serif;
 	background: #003F7F;
 	color: white;
 	text-align: center;
@@ -52,6 +62,14 @@ div.box1 {
 	
 }
 
+.pageheader{
+	font-size:1px;
+	font-family: 'OpenSans-Light';
+
+	background-color:#fffaa4;
+	text-align:center;
+	padding: 30px
+}
 footer {
 	font-family: 'OpenSans-Light';
 	outline: black;
