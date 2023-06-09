@@ -37,24 +37,8 @@ div.box1 {
   text-align: center;
   background-color: #474143;
 }
-.logo{
-max-width: 50px;
-  max-height: 50px;
-  top: 0;
-  left: 0;
-
-}
-.logo_title{
-
-	color: white;
-	
-}
-.logocontainer{
-	
-	background-color: #003F7F;
-}
 .titles{
-	font-family: sans-serif;
+	font-family: 'OpenSans-Light';
 	background: #003F7F;
 	color: white;
 	text-align: center;
@@ -62,14 +46,6 @@ max-width: 50px;
 	
 }
 
-.pageheader{
-	font-size:1px;
-	font-family: 'OpenSans-Light';
-
-	background-color:#fffaa4;
-	text-align:center;
-	padding: 30px
-}
 footer {
 	font-family: 'OpenSans-Light';
 	outline: black;
