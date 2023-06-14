@@ -63,7 +63,7 @@ max-width: 50px;
 }
 
 .pageheader{
-	font-size:1px;
+	font-size:60px;
 	font-family: 'OpenSans-Light';
 
 	background-color:#fffaa4;
@@ -78,25 +78,24 @@ footer {
 	text-align:center;
 	color: white;
 }
+
 .column {
   float: left;
-  width: 50%;
+  width: 50%
 }
-
+.links{
+	text-align: center;
+	margin: 30px;
+	padding: 30px;
+	font-family: 'OpenSans-Light';
+	font-size: 30px;
+	background-color: #93BBE2;
+	border: solid 2px #003F7F;s
+	
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+
   clear: both;
-}
-
-.resources{
-	text-align: center;
-	font-family: 'OpenSans-Light';
-	padding: 40px;
-	border: 1px solid black;
-
-}
-h5{
-	font-size: 25px;
 }
