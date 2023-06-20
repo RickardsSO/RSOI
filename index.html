@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+<head >
+  <title>RSOI</title>
+  <link rel="stylesheet" type="text/css" href="/src/css/main.css" />
+  <script type="text/javascript" src="/src/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/src/js/main.js"></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-5H5KS7Q");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta property="og:site_name" content="Rickards Science Olympiad" />
+  <meta property="og:title" content="Rickards Science Olympiad" />
+  <meta property="og:type" content="article" />
+  <meta name="author" content="Kevin Wang" />
+  <meta name="keywords" content="Science, Competition, SO, RSOI, Scioly" />
+  <meta property="og:url" content="https://rsoi.org" />
+
+  <meta
+    name="description"
+    content="Welcome to the official website of the Rickards Science Olympiad Invitational."
+  />
+  <meta
+    property="og:image"
+    content="https://rsoi.org/src/img/logos/InviteLogo.png"
+  />
+</head>
+<body >
+  <div class="header main" style="background-color: rgb(17, 17, 17)">
+    <div class="container" >
+      <a href="/">
+        <img class="logo" src="/src/img/logos/InviteLogo.png" />
+      </a>
+      <div
+        class="hamburger"
+        onclick="hamburger(this)"
+        onkeypress="hamburger(this)"
+        tabindex="0"
+      >
+      <h1>
+        Welcome to the 4th Annual Rickards Invitational!
+      </h1>
+      <h2>
+        Avaliable in both Satellite and Mini formats<br />
+      </h2>
+      <h3>
+        November 4-11, 2023
+      </h3>
+  
+      <!--span class="buttons">
+
+        <a href="/satellite/">Satellite</a>
+        <a href="/contact.html">Contact</a>
+
+        <a class="scilympiad" href="/scilympiad">Scilympiad</a>
+          <span class="icon-right"></span>
+          <span class="icon-right after"></span>
+      </span-->
+
+
+    </div>
+
+
+  
+
+  <a class="btnfos btnfos-1" href = "/info">
+    <svg>
+      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+    </svg>
+    
+    More Info
+  </a>  
+
+
+
+  <a
+   class="Scilympiad-Button" href="https://scilympiad.com/rickards">Scilympiad</button>
+  </a>
+
+  <a class="btnfos btnfos-1" href = "/info">
+    <svg>
+      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+    </svg>
+    Mailing List
+  </a> 
+
+
+
+
+
+
+
+	<div class="container center">
+		<div class="tiles">
+			<div class="one-third" style="margin-top: -100px;">
+				<h2>Contact Info</h2>
+        <h6 id="emailText">For general questions, please check out our FAQ page or email us at</h6>
+        <button onclick="copyToClipboard('director@rsoi.org')" style="margin-bottom: 80px;">director@rsoi.org</button>
+        <script>
+          function copyToClipboard(link) {
+            var tempInput = document.createElement('input');
+            tempInput.setAttribute('value', link);
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('director@rsoi.org copied to clipboard');
+          }
+        </script>
+
+
+        
+
+        
+
+				<span class="buttons center dark">
+					<!-- <a href="/gold/">More Info</a> -->
+				</span>
+			</div>
+
+
+			<div class="one-third" style="margin-top: -100px;">
+				<h2>FAQ</h2>
+        <h6>Here are all the frequently asked questions, many of your questions should have answers</h6>
+
+        <a class="lowbtn btnfos-2" href = "/info">
+          <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+          </svg>
+          FAQ
+        </a> 
+			</div>
+			<div class="one-third" style="margin-top: -100px;">
+				<h2>Volunteers</h2>
+				<h6>if your school is not coming to our invite and you would love to help supervise, please fill out this form below</h6>
+        <a class="lowbtn btnfos-2" href = "/info">
+          <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+          </svg>
+          Volunteer
+        </a> 
+			</div>
+		</div>
+		<!-- <h1 id="sponsors" style="margin-top: -10px;">Sponsored By</h1> -->
+		<!-- <img src="/src/img/wolfram.png" style="height: auto; max-width: 100%; width: 375px; margin-top: -15px; margin-bottom: -15px;"> -->
+	</div>
+</body>
