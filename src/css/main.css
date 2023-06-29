@@ -606,6 +606,11 @@ div#wrap {
 	margin-bottom: 70px;
 
   }
+  @media (min-width: 1000px) {
+	.EmailInfo {
+	  padding-left: 5px;
+	}
+  }
   
 
 
