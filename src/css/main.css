@@ -295,6 +295,7 @@ div#wrap {
 	padding-top: 20px;
 	padding-bottom: 15px;
 	z-index: 43110;
+	text-shadow: 1.5px 1.5px var(--dark-grey);
 }
 .navigation > a {
 	color: var(--light-teal);
