@@ -455,13 +455,14 @@ div#wrap {
 	font-weight: 300;
 	bottom: -5px;
 	text-transform: none;
+	opacity: 70%;
 }
 
 .footer .kevin {
 
 	font-family: 'Glacial', sans-serif;
 
-	opacity: 0.7;
+	opacity: 0.4;
 	text-align: end;
 	position: absolute;
 	margin-top: -12px;
@@ -507,7 +508,7 @@ div#wrap {
 	position: relative;
 	top: -25px;
 	text-transform: uppercase;
-	opacity: 0.6;
+	opacity: 0.4;
 }
 
 /*** BUTTONS ***/
