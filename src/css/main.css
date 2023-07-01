@@ -134,6 +134,7 @@ div#wrap {
 .container {
 	padding-top: 5px;
 	padding-bottom: 45px;
+	background-color: var(--dark-grey);
 }
 .container h1 {
 	margin-top: 15px;
@@ -147,6 +148,7 @@ div#wrap {
 	padding-top: 20px;
 }
 .container h3{
+	font-weight: 500;
 	margin-top: 15px;
 	margin-bottom: 7.5px;
 	padding-top: 20px;
@@ -262,7 +264,7 @@ div#wrap {
 }
 .header:not(.main) .container {
 	padding-top: 20px;
-	margin-top: -20px;
+
 }
 .header .container h1 {
 	color: var(--primary-yellow);
@@ -282,6 +284,7 @@ div#wrap {
 	color: var(--white);
 	margin-top: -10px;
 	font-size: 30px;
+	letter-spacing: 0.5px;
 	padding: 0;
 }
 
@@ -1307,12 +1310,12 @@ input[type="submit"]:hover {
 }
 
 /*** MEDIA AND RESPONSIVE ***/
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
 	.navigation .hamburger {
 		display: table-cell;
 	}
 	.navigation.active {
-		background-color: var(--dark-grey);
+		background-color: var(--light-teal);
 	}
 	.navigation.active a {
 		text-shadow: none;
@@ -1321,9 +1324,9 @@ input[type="submit"]:hover {
 		display: block;
 	}
 	.navigation > ul {
-		background: var(--dark-grey);
+		background: var(--light-teal);
 		display: none;
-		margin-top: 50px;
+		margin-top: 30px;
 		margin-left: -100px;
 		margin-right: -100px;
 		padding-bottom: 15px;
@@ -1354,9 +1357,7 @@ input[type="submit"]:hover {
 		border: none;
 		color: var(--white);
 	}
-	.header:not(.main) .container {
-		padding-top: 0;
-	}
+
 }
 @media (max-width: 900px) {
 	.banner,
