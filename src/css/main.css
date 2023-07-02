@@ -116,6 +116,7 @@ p{
 }
 b {
 	font-weight: 800;
+	color: var(--white);
 }
 div#wrap {
 	min-height: 100%;
@@ -153,9 +154,9 @@ div#wrap {
 	margin-bottom: 7.5px;
 	padding-top: 20px;
 }
-.container p,
-.container li {
+.container p{
 	font-family: 'Glacial', sans-serif;
+	color: var(--white);
 	font-size: 18px;
 	font-weight: 100;
 	letter-spacing: 0.5px;
@@ -163,6 +164,19 @@ div#wrap {
 	margin-top: 15px;
 	margin-bottom: 7.5px;
 	word-break: break-word;
+	
+}
+.container li {
+	font-family: 'Glacial', sans-serif;
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	line-height: 28px;
+	margin-top: 15px;
+	margin-bottom: 7.5px;
+	word-break: break-word;
+	text-indent: 10px;
 }
 .container p.indent {
 	margin-left: 50px;
@@ -172,18 +186,22 @@ div#wrap {
 	font-family: 'Glacial', sans-serif;
 	font-size: 18px;
 	margin-left: 30px;
+	
 }
 
 .container ul {
 	list-style: none;
+	margin-bottom: 150px;
 
 }
 .container ul li::before {
-	color: var(--black);
-	content: "\25A0";
+	color: var(--white);
+	content: "‣";
+	transform: scale(1.5);
 	display: inline-block;
-	margin-left: -25px;
+	margin-left: -38px;
 	width: 25px;
+
 }
 
 
@@ -269,7 +287,7 @@ div#wrap {
 .header .container h1 {
 	color: var(--primary-yellow);
 	font-size: 45px;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-bottom: 20px;
 	padding-top: 0;
 	
@@ -1028,6 +1046,34 @@ button {
   	}
 		  
 	.hover-underline-animation:hover::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+
+	.hover-underline-animation1 {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		text-decoration: none;
+		top: -7px;
+		line-height: 5px;
+		
+	}
+		  
+	.hover-underline-animation1::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 1.5px;
+		bottom: -5px;
+		left: 0;
+		background-color: var(--primary-yellow);
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+  	}
+		  
+	.hover-underline-animation1:hover::after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
 	}
