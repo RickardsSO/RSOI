@@ -87,9 +87,13 @@ h1{
 }
 
 
-h2, h3, h4, h5{
+h2, h4, h5{
 	font-family: 'Glacial Bold', sans-serif;
 	font-size: 50px;
+}
+h3{
+	font-family: 'Glacial Bold', sans-serif;
+	font-size: 30px;
 }
 div, h1, h2, h3, h4, h5, h6, b, a, tr, th, td, ul, ol, li, img {
 	margin: 0;
@@ -109,7 +113,7 @@ h6 {
 	line-height: 1.5;
 }
 p{
-	margin: -7px;
+	
 	padding: 0;
 	color: var(--white);
 	outline: none;
@@ -1076,6 +1080,41 @@ button {
 	.hover-underline-animation1:hover::after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
+	}
+
+
+	.hover-underline-animation2 {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		text-decoration: none;
+		line-height: 20px;
+
+		
+	}
+
+		  
+	.hover-underline-animation2::after,
+	.hover-underline-animation:focus {
+		content: '';
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 1.5px;
+		bottom: -5px;
+		left: 0;
+		background-color: var(--primary-yellow);
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+		text-shadow: none;
+		letter-spacing: 2px;
+  	}
+		  
+	.hover-underline-animation2:hover::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+		text-shadow: none;
+		letter-spacing: 2px;
 	}
 
 
