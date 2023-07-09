@@ -195,7 +195,6 @@ div#wrap {
 
 .container ul {
 	list-style: none;
-	margin-bottom: 150px;
 
 }
 .container ul li::before {
@@ -207,6 +206,8 @@ div#wrap {
 	width: 25px;
 
 }
+
+
 
 
 /*** LAYOUTS ***/
