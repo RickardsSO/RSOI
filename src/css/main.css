@@ -198,6 +198,7 @@ div#wrap {
 
 }
 .container ul li::before {
+	font-family: 'Glacial', sans-serif;
 	color: var(--white);
 	content: "‣";
 	transform: scale(1.5);
