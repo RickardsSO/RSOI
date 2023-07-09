@@ -490,7 +490,7 @@ div#wrap {
 	opacity: 0.4;
 	text-align: end;
 	position: absolute;
-	margin-top: -12px;
+	margin-top: -29px;
 	text-transform: uppercase;
 	color: var(--white);
 	font-size: 12px;
@@ -1094,8 +1094,8 @@ button {
 	}
 
 		  
-	.hover-underline-animation2::after,
-	.hover-underline-animation:focus {
+	.hover-underline-animation2::after
+	{
 		content: '';
 		position: absolute;
 		width: 100%;
