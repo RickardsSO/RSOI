@@ -138,7 +138,7 @@ div#wrap {
 }
 .container {
 	padding-top: 5px;
-	padding-bottom: 15px;
+	padding-bottom: 90px;
 	background-color: var(--dark-grey);
 }
 .container h1 {
