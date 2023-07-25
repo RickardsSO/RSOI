@@ -1,4 +1,6 @@
 // https://dev.to/leonardoschmittk/how-to-make-a-mouse-ripple-click-effect-with-css-js-and-html-in-2-steps-2fcf
+
+//to enable, change name to ripple.js
 document.onclick = () => applyCursorRippleEffect(event); 
 function applyCursorRippleEffect(e) {
 	const ripple = document.createElement('div');
