@@ -545,6 +545,65 @@ div#wrap {
 	opacity: 0.4;
 }
 
+
+.form-container{
+	background: var(--dark-grey);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/***Contact Form***/
+
+form{
+
+	background: var(--light-teal);
+	display: flex;
+	flex-direction: column;
+	padding: 1.5vw 2.5vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	justify-content: center;
+	font-family: 'Glacial', sans-serif;
+	color:var(--black)
+	
+}
+
+
+form input, text area{
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: white;
+	font-size: 16px;
+
+}
+
+form button{
+	font: 'Glacial Bold', sans-serif;
+	margin: 20px auto 0;
+	padding: 15px;
+	background: var(--primary-yellow);
+	color: var(--light-teal);
+	font-size: 25px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	width: 150px;
+	border-radius: 30px;
+	box-shadow: 2px 2px 2px black;
+
+}
+form button:hover {
+	/* For example, change the background and text color on hover */
+	background: var(--primary-light-yellow);
+	color: var(--light-teal);
+	box-shadow: none;
+  }
+
 /*** BUTTONS ***/
 
  
@@ -635,11 +694,14 @@ div#wrap {
   }
 
 
+#emailText {
+	display: inline; 
+  }
+
 
 .EmailInfo {
 	font-size: 20px;
 	justify-content: left;
-	margin-bottom: 70px;
 
   }
   @media (min-width: 1000px) {
@@ -648,7 +710,12 @@ div#wrap {
 	}
   }
   
+  .contact-container {
+	display: block; /* This will stack the elements inside the container vertically */
+  }
 
+
+  
 
 /* Scilympiad Button css */
 .Scilympiad-Button {
