@@ -75,8 +75,8 @@
           function sendEmail(){
             Email.send({
               SecureToken : "77021059-c2c6-4308-b37f-ff330eeb2013",
-              To : 'rickardssoinvite@gmail.com',
-              From : document.getElementById("email").value,
+              To : 'director@rsoi.org',
+              From : 'rickardssoinvite@gmail.com',
               Subject : document.getElementById("subject").value,
               Body : "Name: " + document.getElementById("name").value 
                     + "<br> Email: " + document.getElementById("email").value
@@ -84,7 +84,7 @@
                     + "<br> Subject: " + document.getElementById("subject").value
                     + "<br><br> Message: " + document.getElementById("message").value
           }).then(
-            message => alert("Message Sent Successfully")
+            message => alert(message)
           );
           }
         </script>
