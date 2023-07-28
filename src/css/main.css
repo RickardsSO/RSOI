@@ -63,6 +63,7 @@
 	--dark-grey: #131212;
 	--dark-yellow: #625300;
 	--light-teal:rgb(0, 154, 151);
+	--dark-teal: rgb(0, 91, 100);
 }
 ::-moz-selection {
 	background: var(--white);
@@ -273,6 +274,7 @@ div#wrap {
 	height: 100%;
 	max-height: 200px;
 }
+
 .main .container {
 	padding-top: 90px;
 	padding-bottom: 10px;
@@ -314,13 +316,10 @@ div#wrap {
 
 /*** NAVIGATION ***/
 .navigation {
-	height: 25px;
+	height: 60px;
 	background: var(--light-teal);
 	font-family: 'Glacial Bold', sans-serif;
 	font-size: 19px;
-	line-height: 20px;
-	padding-top: 20px;
-	padding-bottom: 15px;
 	z-index: 43110;
 	text-shadow: 1.5px 1.5px var(--dark-grey);
 }
@@ -331,11 +330,19 @@ div#wrap {
 	text-decoration: none;
 	text-transform: uppercase;
 	position: relative;
+	
 }
 .navigation > a img {
 	float: left;
 	height: 50px;
+	margin-top: 5px;
 	margin-right: 15px;
+}
+.logo1{
+	margin-top: -0.75em;
+	height: 10%;
+	float: left;
+
 }
 .navigation > a span {
 	float: left;
@@ -343,7 +350,6 @@ div#wrap {
 }
 .navigation > a span::before {
 	background-color: var(--light-teal);
-	bottom: 10px;
 	content: "";
 	display: block;
 	height: 2px;
@@ -402,20 +408,22 @@ div#wrap {
 	/*align-items: center;*/
 	display: grid;
 	grid-template-columns: repeat(4, auto);
-	margin: 0;
-	padding: 0;
+	margin-left: 150px;
+	padding-top: -1px;
 	list-style: none;
 	justify-self: end;
 	/*z-index: 43110;*/
 }
-.navigation > ul > li {
 
-	text-align: center;
-	margin-left: 25px;
-	margin-right: 25px;
+.navigation > ul > li {
 	
+	text-align: center;
+	display: inline-block;
+	position: relative;	
 	/*align-items: center;*/
+
 }
+
 .navigation > ul > li:last-child {
 	margin-right: 0;
 }
@@ -423,18 +431,63 @@ div#wrap {
 	color: var(--white);
 	font-weight: 300;
 	letter-spacing: 2px;
-	padding: 7px 10px;
-	position: relative;
+	padding-top: -10px;
+	padding-bottom: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
+	display: block;
+	border-top: 5px solid var(--dark-teal);
+	padding-bottom: 17px;
+	padding-top: 15px;
+	
 }
-.navigation > ul > li > a:hover,
-.navigation > ul > li > a:focus {
-	color: var(--primary-dark-blue);
+
+.navigation > ul > li > ul.dropdown li{
+	display: block;
+	padding: 20px;
+
+}
+.navigation > ul > li > ul.dropdown li > a{
+	color: var(--white);
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+	letter-spacing: 2px;
+	
+}
+.navigation > ul > li > ul.dropdown{
+	width: 100%;
+	background: var(--light-teal);
+	position: absolute;
+	z-index: 999;
+	display: none;
+}
+.navigation > ul > li > ul > li > a:hover{
+
+	color: var(--primary-yellow);
 	text-shadow: none;
 }
+
+.navigation > ul > li > ul > li:hover{
+	background: var(--dark-teal);
+}
+
+
+.navigation > ul > li:hover ul.dropdown{
+	display: block;
+
+}
+
+.navigation > ul > li > a:hover,
+.navigation > ul > li > a:focus {
+	color: var(--primary-yellow);
+	text-shadow: none;
+	background: var(--dark-teal);
+}
 .navigation > ul > li > a::before {
-	background-color: var(--primary-dark-blue);
 	bottom: 0;
 	content: "";
 	display: block;
@@ -449,6 +502,8 @@ div#wrap {
 .navigation > ul > li > a:focus::before {
 	transform: scaleX(1);
 }
+
+
 
 /*** FOOTER ***/
 .footer {
@@ -1523,7 +1578,7 @@ input[type="submit"]:hover {
 }
 
 /*** MEDIA AND RESPONSIVE ***/
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	.navigation .hamburger {
 		display: table-cell;
 	}
