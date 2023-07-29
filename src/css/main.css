@@ -509,7 +509,7 @@ div#wrap {
 	***/
 	.navigation.active > ul {
 		display: flex;
-		padding-left: -50px;
+
 	}
 	.navigation > ul {
 
@@ -582,6 +582,9 @@ div#wrap {
 
 
 }
+
+
+
 
 
 /*** FOOTER ***/
@@ -1656,7 +1659,7 @@ input[type="submit"]:hover {
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 	.banner,
 	.container,
 	.footer,
