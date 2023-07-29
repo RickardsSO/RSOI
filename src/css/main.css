@@ -365,16 +365,18 @@ div#wrap {
 	cursor: pointer;
 	display: none;
 	float: right;
-	margin-top: -2px;
+	margin-top: 12px;
 }
 .navigation .hamburger,
 .navigation .hamburger > div {
 	height: 22px;
 	vertical-align: middle;
+	
 }
 .navigation .hamburger > div {
 	display: table-cell;
 	float: none;
+
 }
 .navigation .hamburger > div > div {
 	background: var(--white);
@@ -383,13 +385,16 @@ div#wrap {
 	margin: 6px 0;
 	transition: 0.3s;
 	width: 25px;
+	
 }
 .navigation .hamburger:focus > div > div {
 	background: var(--white);
+	
 }
 .navigation .hamburger-toggle > div > div {
 	opacity: 0;
 	box-shadow: none;
+
 }
 .navigation .hamburger-toggle > div > div:first-child {
 	opacity: 1;
@@ -404,12 +409,13 @@ div#wrap {
 .navigation .hamburger-toggle:focus > div > div {
 	background: var(--white);
 }
+
+
 .navigation > ul {
 	/*align-items: center;*/
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	margin-left: 150px;
-	padding-top: -1px;
 	list-style: none;
 	justify-self: end;
 	/*z-index: 43110;*/
@@ -437,8 +443,8 @@ div#wrap {
 	text-transform: uppercase;
 	display: block;
 
-	padding-bottom: 17px;
-	padding-top: 15px;
+	padding-bottom: 19px;
+	padding-top: 18px;
 	
 }
 
@@ -453,11 +459,12 @@ div#wrap {
 	text-transform: uppercase;
 	padding-top: 0.8rem;
 	padding-bottom: 0.8rem;
-	padding-right: 2.5rem;
-	padding-left: 2.5rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 	letter-spacing: 2px;
 	
 }
+
 .navigation > ul > li > ul.dropdown{
 	width: 100%;
 	background: var(--light-teal);
