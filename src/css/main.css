@@ -1525,6 +1525,7 @@ input[type="submit"]:hover {
 }
 .accordion-item-header.active::after{
 	transform: rotate(-180deg);
+	
 }
 .accordion-item-body {
 	max-height: 0;
@@ -1544,7 +1545,6 @@ input[type="submit"]:hover {
 	.accordion-item-body-content {
 	  font-size: 16px;
 	  padding-top: 0.5rem;
-	  padding-bottom: 1.5rem;
 	}
 }
 
