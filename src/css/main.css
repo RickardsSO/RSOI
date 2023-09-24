@@ -1342,6 +1342,8 @@ button {
 		position: relative;
 		display: inline-block;
 		width: 300px;
+		height: 200px; /* Set the desired height */
+		overflow: hidden; /* Hide the overflowing content */
 		margin: 20px;
 		
 	  }
