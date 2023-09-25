@@ -1341,6 +1341,7 @@ button {
 	.image-container {
 		position: relative;
 		display: inline-block;
+		vertical-align: top;
 		width: 300px;
 		margin: 20px;
 		
