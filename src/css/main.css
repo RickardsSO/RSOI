@@ -183,6 +183,19 @@ div#wrap {
 	word-break: break-word;
 	text-indent: 10px;
 }
+.container li.donate{
+	font-family: 'Glacial', sans-serif;
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	line-height: 28px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	word-break: break-word;
+	text-indent: 10px;
+	margin-left: 20px;
+}
 .container p.indent {
 	margin-left: 50px;
 }
@@ -208,6 +221,7 @@ div#wrap {
 	width: 25px;
 
 }
+
 
 
 
