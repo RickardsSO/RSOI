@@ -365,7 +365,7 @@ div#wrap {
 	display: none;
 	float: right;
 	margin-top: 12px;
-
+	z-index: 1000;
 }
 
 
@@ -379,6 +379,7 @@ div#wrap {
 	margin: 6px 0;
 	transition: 0.3s;
 	width: 25px;
+	z-index: 1000;
 	
 }
 .navigation .hamburger:focus > div > div {
@@ -494,6 +495,8 @@ div#wrap {
 @media (max-width: 1200px) {
 	.navigation .hamburger {
 		display: flex;
+		z-index: 1000;
+
 	}
 	.navigation.active {
 		background-color: var(--light-teal);
@@ -1350,7 +1353,25 @@ button {
 		text-align: center;
 		background-color: var(--dark-grey);
 		color: var(--dark-grey);
+
+		
 	}
+
+	.text-padding-active {
+		padding-top: 1rem; /* Adjust the padding value as needed */
+	  }
+	  
+	  /* Example text styles inside the images class */
+	  .images p, .images h1, .images h2, .images h3 {
+		padding-top: 1rem; /* Adjust the padding value as needed */
+	}
+	@media (max-width: 1200px){
+		.images{
+			padding-top: 200px;
+		}
+	}
+		
+	
 
 	.image-container {
 		position: relative;
@@ -1359,17 +1380,22 @@ button {
 		width: 300px;
 		margin: 20px;
 		
+		
 
 		
 	  }
 
 	  .image-container h6{
 		margin-bottom: 10px;
+		
 	  }
 	  .image-container img{
 		width: 300px;
 		height:300px; 
 		object-fit: cover;
+		
+		
+
 	  }
 	  .image-overlay {
 		position: absolute;
@@ -1384,17 +1410,21 @@ button {
 		align-items: center;
 		justify-content: center;
 		transition: opacity 0.3s ease;
+		
 	  }
 	  .image-overlay p{
 		margin: 10px;
+		
 	  }
 
 	  .image-container:hover .image-overlay {
 		opacity: 1;
+		
 	  }
 
 	  .image-container:hover img{
 		opacity: 0.6;
+		
 	  }
 
 	  .images h2{
