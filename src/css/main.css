@@ -456,7 +456,6 @@ div#wrap {
 }
 
 .navigation > ul > li > ul.dropdown{
-	width: 100%;
 	background: var(--light-teal);
 	position: absolute;
 	z-index: 999;
