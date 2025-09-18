@@ -336,6 +336,11 @@ div#wrap {
 	font-size: 19px;
 	z-index: 43110;
 	text-shadow: 1.5px 1.5px var(--dark-grey);
+
+	/* NEW: make the bar a flex container */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .navigation > a {
 	color: var(--light-teal);
@@ -368,10 +373,6 @@ div#wrap {
 	z-index: 1000;
 }
 
-
-
-
-
 .navigation .hamburger > div > div {
 	background: var(--white);
 	box-shadow: 1px 0.8px var(--grey);
@@ -403,23 +404,21 @@ div#wrap {
 }
 
 
+/* NEW: desktop nav list is a flex row with gaps */
 .navigation > ul {
-	/*align-items: center;*/
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	margin-left: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 30px;
 	list-style: none;
-	justify-self: end;
-	/*z-index: 43110;*/
+	margin: 0 0 0 auto; /* push to right */
+	padding: 0;
 }
 
 .navigation > ul > li {
-	
 	text-align: center;
 	display: inline-block;
 	position: relative;	
-	/*align-items: center;*/
-
 }
 
 .navigation > ul > li:last-child {
@@ -429,13 +428,10 @@ div#wrap {
 	color: var(--white);
 	font-weight: 300;
 	letter-spacing: 2px;
-	padding-top: -10px;
-	padding-bottom: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	display: block;
-	padding-bottom: 19px;
-	padding-top: 18px;
+	padding: 18px 0;
 }
 
 .navigation > ul > li > ul.dropdown li{
@@ -455,12 +451,18 @@ div#wrap {
 	
 }
 
-.navigation > ul > li > ul.dropdown{
+.navigation > ul > li > ul.dropdown {
 	background: var(--light-teal);
 	position: absolute;
+	top: 100%;              /* sits below parent tab */
+	left: 50%;              /* start from center */
+	transform: translateX(-50%); /* shift back by half width to center */
 	z-index: 999;
 	display: none;
+	text-align: center;     /* keep text centered */
 }
+
+
 .navigation > ul > li > ul > li > a:hover{
 
 	color: var(--primary-yellow);
@@ -487,8 +489,6 @@ div#wrap {
 	text-shadow: none;
 	background: var(--dark-teal);
 }
-
-
 
 /*** MEDIA AND RESPONSIVE ***/
 @media (max-width: 1200px) {
